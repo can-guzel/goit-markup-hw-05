@@ -436,8 +436,10 @@
             <label class="footer-form-label">
               <input
                 type="email"
+                name="email"
                 class="footer-form-input"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button type="submit" class="footer-form-button">
@@ -451,7 +453,7 @@
       </div>
     </footer>
 
-    <div class="overlay is-open!">
+    <div class="overlay is-open">
       <div class="form-container">
         <button class="close-button" type="button">
           <svg class="close-svg" width="8" height="8">
@@ -460,7 +462,71 @@
         </button>
         <p class="form-title">Leave your contacts and we will call you back</p>
         <form>
-          <div class="form-div"></div>
+          <div class="form-div">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="forminput-div">
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="forminput-svg" width="18" height="24">
+                <use href="./images/icons.svg#human"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-div">
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="forminput-div">
+              <input
+                class="form-input"
+                type="text"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="forminput-svg" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-div">
+            <label class="form-label" for="user-mail">Email</label>
+            <div class="forminput-div">
+              <input
+                class="form-input"
+                type="text"
+                id="user-mail"
+                name="user-mail"
+              />
+              <svg class="forminput-svg" width="18" height="24">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-div">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea
+              class="form-comment"
+              type="text"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="form-privacy">
+            <input
+              class="privacy-checkbox"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+            <label for="user-privacy" class="privacy-text"
+              >I accept the terms and conditions of the
+              <span class="privacy-policy">Privacy Policy</span></label
+            >
+          </div>
         </form>
       </div>
     </div>
