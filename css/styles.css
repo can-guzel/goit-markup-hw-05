@@ -691,6 +691,10 @@ header {
   border-color: #4d5ae5;
 }
 
+.comment-div {
+  margin-bottom: 16px;
+}
+
 .form-privacy {
   margin-bottom: 24px;
   display: flex;
@@ -700,22 +704,29 @@ header {
 }
 
 .privacy-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 2px;
   width: 16px;
   height: 16px;
-  background-color: transparent;
+  fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.privacy-checkbox:active {
-  background-color: #404bbf;
-  border-color: #404bbf;
-}
-
 .privacy-text {
   font-size: 12px;
-  color: #757575;
+  color: #8e8f99;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+.privacy-policy {
+  color: #4d5ae5;
+}
+.privacy-checkbox-background:checked .privacy-checkbox {
+  background-color: #404bbf;
+  border-color: none;
+  fill: #f4f4fd;
 }

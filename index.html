@@ -504,7 +504,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-div">
+          <div class="form-div comment-div">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="form-comment"
@@ -516,15 +516,20 @@
           </div>
           <div class="form-privacy">
             <input
-              class="privacy-checkbox"
+              class="privacy-checkbox-background"
               type="checkbox"
               id="user-privacy"
               value="true"
               name="user-privacy"
             />
-            <label for="user-privacy" class="privacy-text"
-              >I accept the terms and conditions of the
-              <span class="privacy-policy">Privacy Policy</span></label
+            <label for="user-privacy" class="privacy-text">
+              <span class="privacy-checkbox">
+                <svg class="pcb-svg" width="10" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy">Privacy Policy</a></label
             >
           </div>
         </form>
